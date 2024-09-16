@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+.container_content{
+    width: 95%;
+    margin: 0 auto;
+}
+.navbar{
+    background-color: aquamarine;
+}
+.container_content{
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.navbar ul{
+    display: flex;
+    padding: 10px 12px;
+    
+}
+.navbar ul li{
+    display: inline;
+    padding: 10px 12px;
+    
+}
+.contactinfo{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* about css start */
+
+.about{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* opacity: 0.34; */
+    z-index: -1;
+}
+.about::before{
+    content:'';
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.784);
+    z-index: -1;
+}
+.about .about_head{
+    width: 7%;
+    margin: 50px auto;
+    /* display: inline; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    z-index: 99;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:#FF4880;
+    padding:20px 20px 5px 20px;
+    border-bottom: 2px solid #FF4880;
+    border-left:2px solid rgba(255, 255, 255, 0.021);
+    border-right:2px solid rgba(255, 255, 255, 0);
+    border-top:2px solid rgba(255, 255, 255, 0);
+    border-radius: 15px;
+}
+.about .about_content{
+     /* border:1px solid red; */
+     display: flex;
+     padding: 10px 25px;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.about .about_left{
+    display: flex;
+    justify-content: center;
+}
+
+.about .about_left .about_img{
+    /* border:1px solid green; */
+    width:80%;
+    object-fit: cover;
+    border-radius: 2% 35% 2% 28% / 25% 29% 25% 32%;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+.about_img img{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.about_left .about_btn{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Styling for the button container */
+.about_btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #FF4880;
+    z-index: 10000;
+}
+
+/* Styling for the link */
+.about_btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+/* Styling for the icon */
+.about_btn a i {
+    font-size: 30px;
+    color: white;
+}
+
+/* Styling for hover effect if needed */
+.about_btn a:hover {
+    cursor: pointer;
+}
+.about .about_right{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about_right .about_para{
+    font-size: 40px;
+    color:#393D72;
+    font-weight: 700;
+}
+.about_right .about_desc{
+    font-size: 18px;
+    font-weight: 100;
+    color: #000000b6;
+    line-height: 1.6;
+}
+.about_right .about_category{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.about_category ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about_category ul li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.about .more_detail_btn{
+    background-color: #FF4880;
+    padding: 10px 20px;
+    color:#393D72;
+    display: inline;
+    font-size: 20px;
+    width: 22%;
+    border-radius:15px 6px 15px 6px;
+}
+
+
+/* services section start */
+.services{
+    background-color: #ff487f15;
+}
+
+.services .services_head{
+    width: 13.5%;
+    margin: 0 auto 50px auto;
+    /* display: inline; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    z-index: 99;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:#FF4880;
+    padding:20px 20px 5px 20px;
+    border-bottom: 2px solid #FF4880;
+    border-left:2px solid rgba(255, 255, 255, 0.021);
+    border-right:2px solid rgba(255, 255, 255, 0);
+    border-top:2px solid rgba(255, 255, 255, 0);
+    border-radius: 15px;
+}
+
+.services .service_para{
+    font-size: 55px;
+    font-weight: 900;
+    color:#393D72;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.service_wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 40px;
+}
+
+.service_wrapper .service_details_box{
+    width:calc(100%/5);
+    border:2px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:20px;
+      border-radius: 50% 20% / 10% 40%;
+      position: relative;
+      overflow: hidden;
+      z-index: 100;
+}
+.service_details_box i{
+    font-size: 6rem;
+    color:#FF4880;
+
+}
+.service_details_box .ser_box_title{
+    font-size: 24px;
+    color: #393D72;
+    font-weight: 600;
+    z-index: 100
+}
+.service_details_box .service_para{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    width:90%;
+    padding: 20px 5px;
+    z-index: 300
+}
+.service_details_box .service_btn{
+    margin: 10px;
+    background-color: #FF4880;
+    padding: 10px 20px;
+    color:#393D72;
+    display: inline;
+    font-size: 20px;
+    border-radius:15px 6px 15px 6px;
+    text-decoration: none;
+}
+
+.overlay{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0d6efd;
+     opacity: 0;
+     z-index: -1;
+}
+
+.service_details_box:hover .overlay{
+    opacity: 1;
+    animation: flip 400ms linear 0s 1 forwards;
+}
+.service_details_box:hover .ser_box_title{
+    color:#FF4880;
+}
+.service_details_box:hover i{
+    color:White;
+}
+.service_details_box:hover .service_para{
+    color:White;
+}
+@keyframes flip {
+    to{
+       right:0;
+    }
+    from{
+       right:100%;
+    }
+}
